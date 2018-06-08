@@ -7,6 +7,7 @@ namespace UnrealBuildTool.Rules
         public StreetMapImporting(ReadOnlyTargetRules Target)
 			: base(Target)
         {
+            bEnforceIWYU = false;
             PrivateDependencyModuleNames.AddRange(
                 new string[] {
                     "Core",
@@ -29,7 +30,6 @@ namespace UnrealBuildTool.Rules
                     "StreetMapRuntime"
                 }
             );
-            bEnforceIWYU = false;
         }
     }
 }

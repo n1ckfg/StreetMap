@@ -7,6 +7,7 @@ namespace UnrealBuildTool.Rules
         public StreetMapRuntime(ReadOnlyTargetRules Target)
 			: base(Target)
 		{
+			bEnforceIWYU = false;
 			PrivateDependencyModuleNames.AddRange(
 				new string[] {
                     "Core",
@@ -18,7 +19,6 @@ namespace UnrealBuildTool.Rules
                     "PropertyEditor"
                 }
 			);
-			bEnforceIWYU = false;
 		}
 	}
 }
